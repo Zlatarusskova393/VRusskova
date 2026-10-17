@@ -1,0 +1,19 @@
+using UnityEngine;
+
+public class Task10 : MonoBehaviour
+{
+    void Start()
+    {
+        string modelName = "Dragon";
+        int polygons = 15000;
+        float animDuration = 2.5f;
+        bool isVisible = true;
+        float rotationAngle = 45.0f;
+
+        Debug.Log($"Model: {modelName}");
+        Debug.Log($"Polygons: {polygons}");
+        Debug.Log($"Anim duration: {animDuration} s");
+        Debug.Log($"Visible: {isVisible}");
+        Debug.Log($"Rotation angle: {rotationAngle} degrees");
+    }
+}
