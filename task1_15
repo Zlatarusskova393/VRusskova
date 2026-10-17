@@ -1,0 +1,19 @@
+using UnityEngine;
+
+public class Task4 : MonoBehaviour
+{
+    void Start()
+    {
+        int playerLives = 3;
+        float moveSpeed = 5.5f;
+        string levelName = "Level_01";
+        
+        float camX = 10.5f;
+        float camY = 2.0f;
+        float camZ = -5.3f;
+        
+        float loadTime = 1.25f;
+        
+        Debug.Log("Variables created successfully.");
+    }
+}
