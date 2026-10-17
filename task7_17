@@ -1,0 +1,15 @@
+using UnityEngine;
+
+public class Task13 : MonoBehaviour
+{
+    void Start()
+    {
+        string fileName = "level_01_scene.unity";
+
+        int dotIndex = fileName.IndexOf('.');
+        string nameOnly = fileName.Substring(0, dotIndex);
+        string upperName = nameOnly.ToUpper();
+
+        Debug.Log(upperName);
+    }
+}
