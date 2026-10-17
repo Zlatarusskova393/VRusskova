@@ -1,0 +1,52 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Task1();
+        // Task2();
+        // Task3();
+    }
+
+    static void Task1()
+    {
+        int lives = 3;
+        float speed = 5.5f;
+        string levelName = "Level_01";
+        float camX = 10.5f, camY = 2.0f, camZ = -5.3f;
+        float loadTime = 1.25f;
+
+        Console.WriteLine($"Lives: {lives}");
+        Console.WriteLine($"Speed: {speed}");
+        Console.WriteLine($"Level: {levelName}");
+        Console.WriteLine($"Camera: ({camX}, {camY}, {camZ})");
+        Console.WriteLine($"Load time: {loadTime} sec");
+    }
+
+    static void Task2()
+    {
+        string objName = "Player";
+        float x = 1.5f, y = 0.0f, z = 3.2f;
+        float scaleX = 1.0f, scaleY = 1.0f, scaleZ = 1.0f;
+        float rotX = 0.0f, rotY = 90.0f, rotZ = 0.0f;
+        bool isVisible = true;
+
+        Console.WriteLine($"Name: {objName}");
+        Console.WriteLine($"Position: ({x}, {y}, {z})");
+        Console.WriteLine($"Scale: ({scaleX}, {scaleY}, {scaleZ})");
+        Console.WriteLine($"Rotation: ({rotX}, {rotY}, {rotZ})");
+        Console.WriteLine($"Visible: {isVisible}");
+    }
+
+    static void Task3()
+    {
+        double value = 3.99;
+
+        int intValue = (int)value;
+        Console.WriteLine(intValue);
+
+        double doubleValue = (double)intValue;
+        Console.WriteLine(doubleValue);
+    }
+}
