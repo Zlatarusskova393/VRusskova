@@ -1,0 +1,17 @@
+using UnityEngine;
+
+public class Task15 : MonoBehaviour
+{
+    void Start()
+    {
+        string name = "Player";
+        int birthYear = 2000;
+        int currentYear = 2026;
+
+        int age = currentYear - birthYear;
+
+        Debug.Log($"Hello, {name}! You are {age} years old.");
+        Debug.Log($"Your name in uppercase: {name.ToUpper()}");
+        Debug.Log($"Name length: {name.Length} characters");
+    }
+}
