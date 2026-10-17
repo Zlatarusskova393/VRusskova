@@ -1,0 +1,12 @@
+using UnityEngine;
+
+public class Task9 : MonoBehaviour
+{
+    void Start()
+    {
+        double celsius = 25.0;
+        double fahrenheit = celsius * 9.0 / 5.0 + 32.0;
+        
+        Debug.Log($"{celsius} C = {fahrenheit} F");
+    }
+}
