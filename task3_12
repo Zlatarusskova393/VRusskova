@@ -1,0 +1,19 @@
+using UnityEngine;
+
+public class Task3 : MonoBehaviour
+{
+    void Start()
+    {
+        string coords = "x=10;y=20;z=30";
+        
+        
+        string[] parts = coords.Split(';');
+        
+        
+        foreach (string part in parts)
+        {
+            string[] pair = part.Split('=');
+            Debug.Log(pair[1]);
+        }
+    }
+}
