@@ -1,0 +1,17 @@
+using UnityEngine;
+
+public class Task11 : MonoBehaviour
+{
+    void Start()
+    {
+        double value = 7.85;
+
+        int intValue = (int)value;
+        double backToDouble = intValue;
+
+        Debug.Log($"Original: {value}");
+        Debug.Log($"To int: {intValue}");
+        Debug.Log($"Back to double: {backToDouble}");
+        Debug.Log($"Are they equal? {value == backToDouble}");
+    }
+}
