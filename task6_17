@@ -1,0 +1,16 @@
+using UnityEngine;
+
+public class Task12 : MonoBehaviour
+{
+    void Start()
+    {
+        string data = "x=10;y=20;z=30";
+        string[] parts = data.Split(';');
+
+        foreach (string part in parts)
+        {
+            string[] pair = part.Split('=');
+            Debug.Log($"Coordinate {pair[0]} = {pair[1]}");
+        }
+    }
+}
