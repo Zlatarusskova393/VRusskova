@@ -1,0 +1,37 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Task1();
+        // Task2();
+        // Task3();
+    }
+
+    static void Task1()
+    {
+        Console.Write("Enter your name: ");
+        string name = Console.ReadLine();
+        Console.WriteLine($"Hello, {name}!");
+    }
+
+    static void Task2()
+    {
+        string fileName = "scene_01.unity";
+        int dotIndex = fileName.IndexOf('.');
+        Console.WriteLine(fileName.Substring(0, dotIndex));
+    }
+
+    static void Task3()
+    {
+        string coords = "x=10;y=20;z=30";
+        string[] parts = coords.Split(';');
+        
+        foreach (string part in parts)
+        {
+            string[] pair = part.Split('=');
+            Console.WriteLine(pair[1]);
+        }
+    }
+}
