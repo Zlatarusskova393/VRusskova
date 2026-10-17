@@ -1,0 +1,16 @@
+using UnityEngine;
+
+public class Task8 : MonoBehaviour
+{
+    void Start()
+    {
+        int distance = 1500;
+        int time = 120;
+
+        double speed = (double)distance / time;
+        double timeFor2500 = 2500.0 / speed;
+
+        Debug.Log($"Speed: {speed} m/s");
+        Debug.Log($"Time for 2500 m: {timeFor2500} s");
+    }
+}
