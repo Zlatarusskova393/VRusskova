@@ -1,0 +1,16 @@
+using UnityEngine;
+
+public class Task7 : MonoBehaviour
+{
+    void Start()
+    {
+        float x = 2.5f, y = 3.0f, z = 1.5f;
+        float dx = 1.5f, dy = -2.0f, dz = 0.5f;
+
+        float nx = x + dx;
+        float ny = y + dy;
+        float nz = z + dz;
+
+        Debug.Log($"New position: ({nx}, {ny}, {nz})");
+    }
+}
