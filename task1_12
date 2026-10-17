@@ -1,0 +1,11 @@
+using UnityEngine;
+
+public class Task1 : MonoBehaviour
+{
+    void Start()
+    {
+       
+        string name = "Player"; 
+        Debug.Log($"Hello, {name}!");
+    }
+}
