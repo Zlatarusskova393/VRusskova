@@ -1,0 +1,26 @@
+using UnityEngine;
+
+public class ControllerCharge : MonoBehaviour
+{
+    public Renderer indicator;
+    public int charge = 0;
+
+    void Start()
+    {
+        // Шаг 1: пока заряд меньше 100% — увеличиваем на 25% и выводим в консоль
+        while (charge < 100)
+        {
+            charge += 25;
+            Debug.Log("Charge: " + charge + "%");
+        }
+
+        // Шаг 2: когда заряд достиг 100% — красим индикатор в зелёный
+        if (indicator != null)
+        {
+            indicator.material.color = Color.green;
+        }
+
+        // Шаг 3: выводим сообщение о готовности
+        Debug.Log("Controller ready!");
+    }
+}
